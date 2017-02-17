@@ -118,13 +118,13 @@ function fizzbuzz (number) {
   if (number === 3) {
     return "Fizz";
   }
-  if (number === 2) {
+  else if (number === 2) {
     return 2;
   }
   return 1;
 }
 ```
-Wow! our three unit tests pass and we are getting the first three numbers correctly, next step is to get the first 5 items (yes you got it: “1”, “2”, “Fizz”, “4”, “Buzz”).
+Wow! our three unit tests pass and we are getting the first three numbers correctly, next step is to get the first 10 items (yes you got it: “1”, “2”, “Fizz”, “4”, “Buzz”).
 
 
 
