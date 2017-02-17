@@ -28,6 +28,8 @@ Fizz
 - write your code as simple as possible to make your test pass
 - refactor your code and run the same test again (it should pass as even though is refactored the functionality should be the same.
 
+> The key concept is to write your **unit test before** you write a line of implementation **code**.
+
 ## Let’s get started!
 
 #### 1. Clone
