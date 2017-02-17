@@ -6,8 +6,8 @@ Using Test Driven Development to solve FizzBuzz.
 
 Before we start, and for the ones who are not familiar with the FizzBuzz problem, the idea is to display numbers from 1 to 100, but
 
-- for multiples of 3 we will display the word **Fizz** instead of the integer,
-- for multiples of 5 we will output **Buzz** instead of the integer and
+- for multiples of 3 we will display the word **Fizz** instead of the number,
+- for multiples of 5 we will output **Buzz** instead of the number and
 - for multiples of 3 and 5 we will display **FizzBuzz**,
 
 an example of the output below:
