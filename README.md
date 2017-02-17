@@ -26,7 +26,7 @@ Fizz
 - write a simple test that defines an expected functionality/outcome
 - make the test fail (it will fail as we haven’t written any code just yet!)
 - write your code as simple as possible to make your test pass
-- refactor your code and run the same test again (it should pass as even though is refactored the functionality should be the same.
+- refactor your code and run the same test again (it should pass as even though is refactored the functionality should be the same).
 
 > The key concept is to write your **unit test before** you write a line of implementation **code**.
 
