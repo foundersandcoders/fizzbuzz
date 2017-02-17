@@ -40,14 +40,15 @@ git clone https://github.com/skibinska/fizzbuzz.git && cd fizzbuzz
 ```
 #### 2. Go to test/tests.js
 
-We will start by writing the most simple unit test of all, a unit test that will output the first integer of the list:
+##### Iteration 1
+We will start by writing the most simple unit test of all, a unit test that will output the first integer:
 
 ```javascript
 QUnit.test( "when 1, returns 1", function (assert) {
-    assert.equal( fizzbuzz(1), 1, "Test passed: returns 1" );
- });
+    assert.equal( fizzbuzz (), 1, "Test passed: returns 1" );
+});
 ```
-The test fails because **fizzbuzz is not defined**.
+Run the test by opening qunit.html. Our first fail is because **fizzbuzz is not defined**.
 
 So we need to add the method to index.js file:
 
@@ -63,4 +64,39 @@ function fizzbuzz () {
   return 1;
 }
 ```
-Yaah! The test passed! 
+Yeaah! The test passed! 
+
+##### Iteration 2
+
+Let’s now get the first two integers.
+
+Remember always write the unit test first!
+
+Add to test/tests.js the unit test to check if our fanction ruturns 2:
+
+```javascript
+QUnit.test( "when 2, returns 2", function (assert) {
+   assert.equal( fizzbuzz(2), 2, "Test passed: returns 2" );
+});
+```
+The test fails bacause it expects **2** but got **1**.
+
+We need to write just enough code to pass this test.
+
+Again add to index.js:
+```javascript
+function fizzbuzz (number) {
+  if (number === 2) {
+    return 2;
+  }
+  return 1;
+}
+```
+That does just enough to pass the test. 
+
+### Iteration 3
+
+
+
+
+
