@@ -83,7 +83,7 @@ The test fails bacause it expects **2** but got **1**.
 
 We need to write just enough code to pass this test.
 
-Again add to index.js:
+Update index.js:
 ```javascript
 function fizzbuzz (number) {
   if (number === 2) {
