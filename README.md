@@ -4,7 +4,7 @@ Using Test Driven Development to solve FizzBuzz.
 
 ## Defining the problem
 
-Before we start, and for the ones who are not familiar with the FizzBuzz problem, the idea is to display integers from 1 to 100, but
+Before we start, and for the ones who are not familiar with the FizzBuzz problem, the idea is to display numbers from 1 to 100, but
 
 - for multiples of 3 we will display the word **Fizz** instead of the integer,
 - for multiples of 5 we will output **Buzz** instead of the integer and
@@ -100,7 +100,7 @@ That does just enough to pass the test.
 
 #### Iteration 3
 
-Well, that was easy! but not quite there yet, let’s now get the first three numbers, but as the third item is multiple of 3 we will have to output **Fizz** instead of the number 3.
+Well, that was easy! but not quite there yet, let’s now get the first three numbers, but as the third number is multiple of 3 we will have to output **Fizz** instead of the number 3.
 
 **Repeat the TDD Process**
 
@@ -126,4 +126,4 @@ function fizzbuzz (number) {
   return 1;
 }
 ```
-Wow! our three unit tests pass and we are getting the first three numbers correctly, next step is to get the first 10 items.
+Wow! our three unit tests pass and we are getting the first three numbers correctly, next step is to get the first 10 numbers.
