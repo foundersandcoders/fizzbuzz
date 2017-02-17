@@ -1,14 +1,14 @@
 # FizzBuzz
 
-Using Test Driven Development to solve FizzBuzz
+Using Test Driven Development to solve FizzBuzz.
 
 ## Defining the problem
 
-Before we start, and for the ones who are not familiar with the FizzBuzz problem, the idea is to display integers from 1 to 100, but 
+Before we start, and for the ones who are not familiar with the FizzBuzz problem, the idea is to display integers from 1 to 100, but
 
-- for multiples of 3 we’ll display the word **Fizz** instead of the integer,
-- for multiples of 5 we’ll output **Buzz** instead of the integer
-- and for multiples of 3 and 5 we’ll display **FizzBuzz**,
+- for multiples of 3 we will display the word **Fizz** instead of the integer,
+- for multiples of 5 we will output **Buzz** instead of the integer and
+- for multiples of 3 and 5 we’ll display **FizzBuzz**,
 
 an example of the output below:
 ```
@@ -29,3 +29,10 @@ Fizz
 - refactor your code and run the same test again (it should pass as even though is refactored the functionality should be the same.
 
 ## Let’s get started!
+
+#### 1. Clone
+
+Clone the repository by copy-pasting the following command into your terminal:
+```
+git clone https://github.com/skibinska/fizzbuzz.git && cd fizzbuzz
+```
