@@ -46,7 +46,7 @@ We will start by writing the most simple unit test of all, a unit test that will
 
 ```javascript
 QUnit.test( "when 1, returns 1", function (assert) {
-    assert.equal( fizzbuzz (), 1, "Test passed: returns 1" );
+    assert.equal( fizzbuzz(), 1, "Test passed: returns 1" );
 });
 ```
 **Run the test by opening qunit.html.**
