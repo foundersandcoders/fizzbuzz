@@ -49,7 +49,8 @@ QUnit.test( "when 1, returns 1", function (assert) {
     assert.equal( fizzbuzz (), 1, "Test passed: returns 1" );
 });
 ```
-Run the test by opening qunit.html.
+**Run the test by opening qunit.html.**
+
 Our first fail is because **fizzbuzz is not defined**.
 
 So we need to add the method to index.js file:
@@ -101,7 +102,7 @@ That does just enough to pass the test.
 
 Well, that was easy! but not quite there yet, let’s now get the first three numbers, but as the third item is multiple of 3 we will have to output **Fizz** instead of the number 3.
 
-##### Repeat the TDD Process
+**Repeat the TDD Process**
 
 Let' write a test
 
@@ -113,6 +114,7 @@ QUnit.test( "when 3, returns Fizz", function (assert) {
 The test fails because it expects **Fizz** but got **1**.
 
 Let's write enough code to pass this test.
+
 ```javascript
 function fizzbuzz (number) {
   if (number === 3) {
@@ -124,11 +126,4 @@ function fizzbuzz (number) {
   return 1;
 }
 ```
-Wow! our three unit tests pass and we are getting the first three numbers correctly, next step is to get the first 10 items (yes you got it: “1”, “2”, “Fizz”, “4”, “Buzz”).
-
-
-
-
-
-
-
+Wow! our three unit tests pass and we are getting the first three numbers correctly, next step is to get the first 10 items.
