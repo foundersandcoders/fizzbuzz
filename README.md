@@ -126,4 +126,70 @@ function fizzbuzz (number) {
   return 1;
 }
 ```
-Wow! our three unit tests pass and we are getting the first three numbers correctly, next step is to get the first 10 numbers.
+Wow! our three unit tests pass and we are getting the first three numbers correctly, next step is to get the first four numbers.
+
+#### Iteration 4
+
+**Repeat the TDD Process**
+
+Let' write a test
+```javascript
+QUnit.test( "when 4, returns 4", function (assert) {
+    assert.equal( fizzbuzz(4), 4, "Test passed: returns 4" );
+});
+```
+The test fails again.
+
+Let's write enough code to pass this test.
+
+```javascript
+function fizzbuzz (number) {
+  if (number === 4) {
+    return 4;
+  }
+  else if (number === 3) {
+    return "Fizz";
+  }
+  else if (number === 2) {
+    return 2;
+  }
+  return 1;
+}
+
+```
+#### Iteration 5
+
+
+**Repeat the TDD Process again**
+
+Write test:
+
+```javascript
+QUnit.test( "when 5, returns Buzz", function (assert) {
+    assert.equal( fizzbuzz(5), "Buzz", "Test passed: returns Buzz" );
+});
+```
+
+The test fails because it expects **Buzz** but got **1**.
+
+Write code:
+
+```javascript
+function fizzbuzz (number) {
+  if (number === 5) {
+    return "Buzz";
+  }
+  else if (number === 4) {
+    return 4;
+  }
+  else if (number === 3) {
+    return "Fizz";
+  }
+  else if (number === 2) {
+    return 2;
+  }
+  return 1;
+}
+```
+
+
