@@ -130,17 +130,16 @@ Wow! our three unit tests pass and we are getting the first three numbers correc
 
 #### Iteration 4
 
-**Repeat the TDD Process**
+Write a unit test:
 
-Let' write a test
 ```javascript
 QUnit.test( "when 4, returns 4", function (assert) {
     assert.equal( fizzbuzz(4), 4, "Test passed: returns 4" );
 });
 ```
-The test fails again.
+Watch unit test fail (it expects **4** but got **1**).
 
-Let's write enough code to pass this test.
+Write code to pass unit test:
 
 ```javascript
 function fizzbuzz (number) {
@@ -191,5 +190,12 @@ function fizzbuzz (number) {
   return 1;
 }
 ```
+Good stuff, our tests pass but our code is getting harder and harder to read (this is where the last step in each iteration comes on board: refactoring), 
+
+> **refactoring** means rearranging our code so its easily readable by us (humans);
+
+so how can we make this easier to read?
+
+I’m thinking of extracting some of the code to another function, let’s try that:
 
 
