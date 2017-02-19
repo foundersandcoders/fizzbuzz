@@ -157,7 +157,7 @@ function fizzbuzz (number) {
 
 ```
 
-The next challenge is to get the **Buzz** output whenever a multiple of 5.
+The next challenge is to get the **Buzz** output instaed of 5, which is a multiple of 5.
  
 #### Iteration 5
 
