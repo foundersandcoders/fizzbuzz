@@ -82,7 +82,7 @@ QUnit.test( "when 2, returns 2", function (assert) {
    assert.equal( fizzbuzz(2), 2, "Test passed: returns 2" );
 });
 ```
-The test fails bacause it expects **2** but got **1**.
+The test fails bacause it expects **2** but gets **1**.
 
 We need to write just enough code to pass this test.
 
@@ -111,7 +111,7 @@ QUnit.test( "when 3, returns Fizz", function (assert) {
     assert.equal( fizzbuzz(3), "Fizz", "Test passed: returns Fizz" );
 });
 ```
-The test fails because it expects **Fizz** but got **1**.
+The test fails because it expects **Fizz** but gets **1**.
 
 Let's write enough code to pass this test.
 
@@ -137,7 +137,7 @@ QUnit.test( "when 4, returns 4", function (assert) {
     assert.equal( fizzbuzz(4), 4, "Test passed: returns 4" );
 });
 ```
-Watch unit test fail (it expects **4** but got **1**).
+Watch unit test fail (it expects **4** but gets **1**).
 
 Write code to pass unit test:
 
