@@ -201,5 +201,5 @@ Once you have your process nailed:
 - Write a test and watch it fail
 - Write just enough code to pass the test (without breaking any other test that was already passing!)
 
-You can go through all the requirements for the stopwatch and grow your application one feature at a time.
+You can continue working on solving this problem!
 
