@@ -167,7 +167,7 @@ QUnit.test( "when 5, returns Buzz", function (assert) {
 });
 ```
 
-As expected, our test fails fails because we get **1** instead of **Buzz**, let’s fix that.
+As expected, our test fails because we get **1** instead of **Buzz**, let’s fix that.
 
 ```javascript
 function fizzbuzz (number) {
