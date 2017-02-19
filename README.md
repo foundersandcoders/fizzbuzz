@@ -156,12 +156,12 @@ function fizzbuzz (number) {
 }
 
 ```
+
+The next challenge is to get the **Buzz** output whenever a multiple of 5.
+ 
 #### Iteration 5
 
-
-**Repeat the TDD Process again**
-
-Write test:
+Let’s write the unit test first:
 
 ```javascript
 QUnit.test( "when 5, returns Buzz", function (assert) {
@@ -169,9 +169,7 @@ QUnit.test( "when 5, returns Buzz", function (assert) {
 });
 ```
 
-The test fails because it expects **Buzz** but got **1**.
-
-Write code:
+As expected, our test fails fails because we get **1** instead of **Buzz**, let’s fix that.
 
 ```javascript
 function fizzbuzz (number) {
@@ -198,4 +196,5 @@ so how can we make this easier to read?
 
 I’m thinking of extracting some of the code to another function, let’s try that:
 
+Isn’t this easier to read? Yes!, and running our unit tests confirm that we haven’t broken anything as all of them still pass!
 
