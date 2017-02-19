@@ -196,3 +196,10 @@ I’m thinking of extracting some of the code to another function, let’s try t
 
 Isn’t this easier to read? Yes!, and running our unit tests confirm that we haven’t broken anything as all of them still pass!
 
+Once you have your process nailed:
+
+- Write a test and watch it fail
+- Write just enough code to pass the test (without breaking any other test that was already passing!)
+
+You can go through all the requirements for the stopwatch and grow your application one feature at a time.
+
