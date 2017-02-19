@@ -102,8 +102,6 @@ That does just enough to pass the test.
 
 Well, that was easy! but not quite there yet, let’s now get the first three numbers, but as the third number is multiple of 3 we will have to output **Fizz** instead of the number 3.
 
-**Repeat the TDD Process**
-
 Let' write a test
 
 ```javascript
