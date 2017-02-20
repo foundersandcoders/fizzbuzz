@@ -15,9 +15,6 @@ An example of the output below:
 1
 2
 Fizz
-4
-Buzz
-Fizz
 ```
 ## Defining the tool
 
@@ -124,76 +121,13 @@ function fizzbuzz (number) {
   return 1;
 }
 ```
-Wow! our three unit tests pass and we are getting the first three numbers correctly, next step is to get the first four numbers.
-
-#### Iteration 4
-
-Write a unit test:
-
-```javascript
-QUnit.test( "when 4, returns 4", function (assert) {
-    assert.equal( fizzbuzz(4), 4, "Test passed: returns 4" );
-});
-```
-Watch unit test fail (it expects **4** but gets **1**).
-
-Write code to pass unit test:
-
-```javascript
-function fizzbuzz (number) {
-  if (number === 4) {
-    return 4;
-  }
-  else if (number === 3) {
-    return "Fizz";
-  }
-  else if (number === 2) {
-    return 2;
-  }
-  return 1;
-}
-
-```
-
-The next challenge is to get the **Buzz** output instaed of 5, which is a multiple of 5.
- 
-#### Iteration 5
-
-Let’s write the unit test first:
-
-```javascript
-QUnit.test( "when 5, returns Buzz", function (assert) {
-    assert.equal( fizzbuzz(5), "Buzz", "Test passed: returns Buzz" );
-});
-```
-
-As expected, our test fails because we get **1** instead of **Buzz**, let’s fix that.
-
-```javascript
-function fizzbuzz (number) {
-  if (number === 5) {
-    return "Buzz";
-  }
-  else if (number === 4) {
-    return 4;
-  }
-  else if (number === 3) {
-    return "Fizz";
-  }
-  else if (number === 2) {
-    return 2;
-  }
-  return 1;
-}
-```
-Good stuff, our tests pass but our code is getting harder and harder to read (this is where the last step in each iteration comes on board: refactoring), 
+Good stuff, our tests pass but our code is getting harder to read (this is where the last step in each iteration comes on board: refactoring), 
 
 > **refactoring** means rearranging our code so its easily readable by us (humans);
 
 so how can we make this easier to read?
 
-I’m thinking of extracting some of the code to another function, let’s try that:
-
+I’m thinking of removing some of the if/else statement, let’s try that:
 
 ```javascript
 function fizzbuzz (number) {
@@ -205,7 +139,6 @@ function fizzbuzz (number) {
   }
 }
 ```
-### do only to 3!!!
 Isn’t this easier to read? Yes!, and running our unit tests confirm that we haven’t broken anything as all of them still pass!
 
 Once you have your process nailed:
