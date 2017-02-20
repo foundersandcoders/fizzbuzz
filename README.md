@@ -15,6 +15,8 @@ An example of the output below:
 1
 2
 Fizz
+4 
+Buzz
 ```
 ## Defining the tool
 
