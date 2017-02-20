@@ -194,6 +194,18 @@ so how can we make this easier to read?
 
 I’m thinking of extracting some of the code to another function, let’s try that:
 
+
+```javascript
+function fizzbuzz (number) {
+ if (number === 3) {
+    return "Fizz";
+  }
+  else {
+    return number;
+  }
+}
+```
+### do only to 3!!!
 Isn’t this easier to read? Yes!, and running our unit tests confirm that we haven’t broken anything as all of them still pass!
 
 Once you have your process nailed:
