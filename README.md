@@ -20,7 +20,7 @@ fizzbuzz(3); // Output: Fizz
 
 ![TTD CYCLE](https://cloud.githubusercontent.com/assets/10700103/23134527/09fabe52-f78d-11e6-90d8-b747714a52f6.png)
 
-**TDD** is basically a methodology or a software development process that is based on the **repetition** of the following tasks:
+**Test-driven development (TDD)** is basically a methodology or a software development process that is based on the **repetition** of the following tasks:
 
 - write a simple test that defines an expected functionality/outcome
 - make the test fail (it will fail as we haven’t written any code just yet!)
