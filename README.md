@@ -10,13 +10,11 @@ Before we start, and for the ones who are not familiar with the FizzBuzz problem
 - for multiples of 5 we will output **Buzz** instead of the number and
 - for multiples of 3 and 5 we will display **FizzBuzz**.
 
-An example of the output below:
+An example:
 ```
-1
-2
-Fizz
-4 
-Buzz
+fizzbazz (1); // Output: 1
+fizzbazz (2); // Output: 2
+fizzbazz (3); // Output: Fizzz
 ```
 ## Defining the tool
 
