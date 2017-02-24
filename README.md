@@ -12,9 +12,9 @@ Before we start, and for the ones who are not familiar with the FizzBuzz problem
 
 An example:
 ```javascript
-fizzbazz(1); // Output: 1
-fizzbazz(2); // Output: 2
-fizzbazz(3); // Output: Fizz
+fizzbuzz(1); // Output: 1
+fizzbuzz(2); // Output: 2
+fizzbuzz(3); // Output: Fizz
 ```
 ## Defining the tool
 
