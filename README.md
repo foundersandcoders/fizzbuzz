@@ -25,6 +25,8 @@ fizzbuzz(3); // Output: Fizz
 - write your code as simple as possible to make your test pass
 - refactor your code and run the same test again (it should pass as even though is refactored the functionality should be the same).
 
+![TTD CYCLE](https://cloud.githubusercontent.com/assets/10700103/23134527/09fabe52-f78d-11e6-90d8-b747714a52f6.png)
+
 > The key concept is to write your **unit test before** you write a line of implementation **code**.
 
 ## Let’s get started!
