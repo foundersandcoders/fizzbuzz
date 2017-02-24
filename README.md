@@ -11,10 +11,10 @@ Before we start, and for the ones who are not familiar with the FizzBuzz problem
 - for multiples of 3 and 5 we will display **FizzBuzz**.
 
 An example:
-```
-fizzbazz (1); // Output: 1
-fizzbazz (2); // Output: 2
-fizzbazz (3); // Output: Fizzz
+```javascript
+fizzbazz(1); // Output: 1
+fizzbazz(2); // Output: 2
+fizzbazz(3); // Output: Fizzz
 ```
 ## Defining the tool
 
