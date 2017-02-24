@@ -14,7 +14,7 @@ An example:
 ```javascript
 fizzbazz(1); // Output: 1
 fizzbazz(2); // Output: 2
-fizzbazz(3); // Output: Fizzz
+fizzbazz(3); // Output: Fizz
 ```
 ## Defining the tool
 
