@@ -47,7 +47,7 @@ We will start by writing the most simple unit test of all, a unit test that will
 
 ```javascript
 QUnit.test( "when 1, returns 1", function (assert) {
-    assert.equal( fizzbuzz(), 1, "Test passed: returns 1" );
+    assert.equal( fizzbuzz(1), 1, "Test passed: returns 1" );
 });
 ```
 **Run the test by opening qunit.html.**
@@ -59,7 +59,7 @@ So we need to add the method to index.js file:
 ```javascript
 function fizzbuzz () {}
 ```
-This make the test fail too beacuse it expect **1** but got **undefined**.
+This make the test fail too because it expect **1** but got **undefined**.
 
 Now let’s write the simplest possible code to make the test pass:
 
@@ -68,7 +68,7 @@ function fizzbuzz () {
   return 1;
 }
 ```
-Yeaah! The test passed! 
+Yeaah! The test passed!
 
 #### Iteration 2
 
@@ -83,7 +83,7 @@ QUnit.test( "when 2, returns 2", function (assert) {
    assert.equal( fizzbuzz(2), 2, "Test passed: returns 2" );
 });
 ```
-The test fails bacause it expects **2** but gets **1**.
+The test fails because it expects **2** but gets **1**.
 
 We need to write just enough code to pass this test.
 
@@ -97,7 +97,7 @@ function fizzbuzz (number) {
   return 1;
 }
 ```
-That does just enough to pass the test. 
+That does just enough to pass the test.
 
 #### Iteration 3
 
@@ -125,7 +125,7 @@ function fizzbuzz (number) {
   return 1;
 }
 ```
-Good stuff, our tests pass but our code is getting harder to read (this is where the last step in each iteration comes on board: refactoring), 
+Good stuff, our tests pass but our code is getting harder to read (this is where the last step in each iteration comes on board: refactoring),
 
 > **refactoring** means rearranging our code so its easily readable by us (humans);
 
@@ -151,4 +151,3 @@ Once you have your process nailed:
 - Write just enough code to pass the test (without breaking any other test that was already passing!)
 
 You can continue working on solving this problem!
-
