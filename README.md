@@ -1,3 +1,6 @@
+Author: @skibinska
+Maintainer: @skibinska
+
 # FizzBuzz
 
 Using Test Driven Development to solve FizzBuzz.
