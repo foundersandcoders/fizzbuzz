@@ -1,3 +1,6 @@
+**Author**: [@skibinska](https://github.com/skibinska)  
+**Maintainer**: [@skibinska](https://github.com/skibinska)
+
 # FizzBuzz
 
 Using Test Driven Development to solve FizzBuzz.
