@@ -1,5 +1,7 @@
-Author: @skibinska  
-Maintainer: @skibinska
+
+**Author**: [@skibinska](https://github.com/skibinska)  
+**Maintainer**: [@skibinska](https://github.com/skibinska)
+
 
 # FizzBuzz
 
