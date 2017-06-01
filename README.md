@@ -1,4 +1,4 @@
-Author: @skibinska
+Author: @skibinska  
 Maintainer: @skibinska
 
 # FizzBuzz
