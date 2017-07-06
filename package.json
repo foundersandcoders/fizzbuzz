@@ -1,0 +1,26 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "**Author**: [@skibinska](https://github.com/skibinska)   **Maintainer**: [@skibinska](https://github.com/skibinska)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foundersandcoders/fizzbuzz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foundersandcoders/fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/foundersandcoders/fizzbuzz#readme",
+  "devDependencies": {
+    "tap-spec": "^4.1.1",
+    "tape": "^4.7.0"
+  }
+}

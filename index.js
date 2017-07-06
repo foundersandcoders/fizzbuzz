@@ -1,2 +1,7 @@
 'use strict';
-// write your code here
+
+function fizzbuzz() {
+  // write your code here
+}
+
+module.exports = fizzbuzz;
