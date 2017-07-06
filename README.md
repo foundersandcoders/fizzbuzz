@@ -51,35 +51,32 @@ Install the dependencies (Tape and Tap-spec) with:
 Run the example test with:
 `npm test`
 
-### 2. Go to test/tests.js
+### 2. Go to test.js
 
 #### Iteration 1
 
 We will start by writing the most simple unit test of all, a unit test that will output the first number:
 
 ```javascript
-QUnit.test( "when 1, returns 1", function (assert) {
-    assert.equal( fizzbuzz(1), 1, "Test passed: returns 1" );
+test('Testing fizzbuzz return value', function(t) {
+  var actual = fizzbuzz(1);
+  var expected = 1;
+  t.equal(actual, expected, 'Should return 1 when given 1');
+  t.end();
 });
 ```
-**Run the test by opening qunit.html.**
+**Run the test with `npm test`**
 
-Our first fail is because **fizzbuzz is not defined**.
+Our first fail is because **fizzbuzz doesn't return anything**.
 
-So we need to add the method to index.js file:
-
-```javascript
-function fizzbuzz () {}
-```
-This make the test fail too because it expect **1** but got **undefined**.
-
-Now let’s write the simplest possible code to make the test pass:
+So we need to add to the function in  `index.js`:
 
 ```javascript
-function fizzbuzz () {
+function fizzbuzz() {
   return 1;
 }
 ```
+
 Yeaah! The test passed!
 
 #### Iteration 2
