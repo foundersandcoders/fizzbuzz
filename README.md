@@ -85,21 +85,24 @@ Let’s now get the first two numbers.
 
 > Remember always write the unit test first!
 
-Add to test/tests.js the unit test to check if our fanction ruturns 2:
+Add a unit test to `test.js` to check if our function returns 2:
 
 ```javascript
-QUnit.test( "when 2, returns 2", function (assert) {
-   assert.equal( fizzbuzz(2), 2, "Test passed: returns 2" );
+test('Testing fizzbuzz return value', function(t) {
+  var actual = fizzbuzz(2);
+  var expected = 2;
+  t.equal(actual, expected, 'Should return 2 when given 2');
+  t.end();
 });
 ```
 The test fails because it expects **2** but gets **1**.
 
 We need to write just enough code to pass this test.
 
-Update index.js:
+Update `index.js`:
 
 ```javascript
-function fizzbuzz (number) {
+function fizzbuzz(number) {
   if (number === 2) {
     return 2;
   }
