@@ -44,6 +44,13 @@ Clone the repository by copy-pasting the following command into your terminal:
 ```
 git clone https://github.com/skibinska/fizzbuzz.git && cd fizzbuzz
 ```
+
+Install the dependencies (Tape and Tap-spec) with:
+`npm install`
+
+Run the example test with:
+`npm test`
+
 ### 2. Go to test/tests.js
 
 #### Iteration 1
