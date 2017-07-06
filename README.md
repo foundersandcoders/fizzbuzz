@@ -113,13 +113,16 @@ That does just enough to pass the test.
 
 #### Iteration 3
 
-Well, that was easy! but not quite there yet, let’s now get the first three numbers, but as the third number is multiple of 3 we will have to output **Fizz** instead of the number 3.
+Well, that was easy, but we're not quite there yet. Let’s now get the first three numbers, but as the third number is multiple of 3 we will have to output **Fizz** instead of the number 3.
 
-Let' write a test
+Let's write a test:
 
 ```javascript
-QUnit.test( "when 3, returns Fizz", function (assert) {
-    assert.equal( fizzbuzz(3), "Fizz", "Test passed: returns Fizz" );
+test('Testing fizzbuzz return value', function(t) {
+  var actual = fizzbuzz(3);
+  var expected = 'Fizz';
+  t.equal(actual, expected, 'Should return Fizz when given 3');
+  t.end();
 });
 ```
 The test fails because it expects **Fizz** but gets **1**.
@@ -127,7 +130,7 @@ The test fails because it expects **Fizz** but gets **1**.
 Let's write enough code to pass this test.
 
 ```javascript
-function fizzbuzz (number) {
+function fizzbuzz(number) {
   if (number === 3) {
     return "Fizz";
   }
@@ -137,16 +140,16 @@ function fizzbuzz (number) {
   return 1;
 }
 ```
-Good stuff, our tests pass but our code is getting harder to read (this is where the last step in each iteration comes on board: refactoring),
+Good stuff; our tests pass but our code is getting harder to read (this is where the last step in each iteration comes on board: refactoring),
 
-> **refactoring** means rearranging our code so its easily readable by us (humans);
+> **refactoring** means rearranging our code so it's easily readable by us (humans);
 
 so how can we make this easier to read?
 
-I’m thinking of removing some of the if/else statement, let’s try that:
+I’m thinking of removing one of the if/else statements, let’s try that:
 
 ```javascript
-function fizzbuzz (number) {
+function fizzbuzz(number) {
  if (number === 3) {
     return "Fizz";
   }
@@ -155,7 +158,7 @@ function fizzbuzz (number) {
   }
 }
 ```
-Isn’t this easier to read? Yes!, and running our unit tests confirm that we haven’t broken anything as all of them still pass!
+Isn’t this easier to read? Yes! Running our unit tests confirm that we haven’t broken anything as all of them still pass.
 
 Once you have your process nailed:
 
