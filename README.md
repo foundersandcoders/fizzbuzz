@@ -42,7 +42,7 @@ This is also called the **Red-Green-Refactor** cycle of TDD.
 
 Clone the repository by copy-pasting the following command into your terminal:
 ```
-git clone https://github.com/skibinska/fizzbuzz.git && cd fizzbuzz
+git clone https://github.com/foundersandcoders/fizzbuzz.git && cd fizzbuzz
 ```
 
 Install the dependencies (Tape and Tap-spec) with:
