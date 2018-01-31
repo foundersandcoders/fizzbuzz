@@ -9,9 +9,9 @@ Using Test Driven Development to solve FizzBuzz.
 
 ## Pairing
 
-For this task, we recommend that you use the ping pong pairing method.
+For this task, we recommend that you use the [ping pong](https://github.com/foundersandcoders/master-reference/blob/master/coursebook/week-1/pair-programming.md) pairing method.
 
-One student starts by creating a single failing test and then the other writes code to make the test pass. Keep swapping roles until you complete the task.
+One student starts by creating a single failing test and then the other writes code to make the test pass. When the test is passing the second student writes another failing test for the first to complete. Keep swapping roles until you complete the task.
 
 ## Defining the problem
 
