@@ -36,6 +36,22 @@ This is also called the **Red-Green-Refactor** cycle of TDD.
 
 > The key concept is to write your **unit test before** you write a line of implementation **code**.
 
+## Tape Testing terminologies
+
+- t.equal(actual, expected, msg)
+
+  Compares flat data structure. It uses the == operator.
+
+- t.deepEqual(actual, expected, msg)
+
+    It is used for testing nested data structure. For example if two objects, and their child objects are equal. It uses the === operator
+
+- t.end(err)
+
+   Declare the end of a test explicitly. If err is passed in t.end will assert that it is falsey.
+
+
+
 ## Let’s get started!
 
 ### 1. Clone
