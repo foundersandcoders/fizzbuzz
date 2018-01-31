@@ -7,6 +7,12 @@
 
 Using Test Driven Development to solve FizzBuzz.
 
+## Pairing
+
+For this task, we recommend that you use the ping pong pairing method.
+
+One student starts by creating a single failing test and then the other writes code to make the test pass. Keep swapping roles until you complete the task.
+
 ## Defining the problem
 
 Before we start, and for the ones who are not familiar with the FizzBuzz problem, the idea is to display numbers from 1 to 100, but
