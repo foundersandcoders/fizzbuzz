@@ -15,11 +15,12 @@ One student starts by creating a single failing test and then the other writes c
 
 ## Defining the problem
 
-Before we start, and for the ones who are not familiar with the FizzBuzz problem, the idea is to display numbers from 1 to 100, but
+Before we start, and for the ones who are not familiar with the [FizzBuzz problem](https://en.wikipedia.org/wiki/Fizz_buzz), the idea is to write a function that takes a number and either:
 
-- for multiples of 3 we will display the word **Fizz** instead of the number,
-- for multiples of 5 we will output **Buzz** instead of the number and
-- for multiples of 3 and 5 we will display **FizzBuzz**.
+- returns the number
+- for multiples of 3 returns the word **Fizz** instead of the number
+- for multiples of 5 returns the word **Buzz** instead of the number
+- for multiples of 3 and 5 returns the word **FizzBuzz**.
 
 An example:
 ```javascript
@@ -29,7 +30,7 @@ fizzbuzz(3); // Output: Fizz
 ```
 ## Defining the tool
 
-**Test-driven development (TDD)** is basically a methodology or a software development process that is based on the **repetition** of the following tasks:
+**Test-driven development (TDD)** is a methodology or a software development process that is based on the **repetition** of the following tasks:
 
 - write a simple test that defines an expected functionality/outcome
 - make the test fail (it will fail as we haven’t written any code just yet!)
@@ -171,4 +172,4 @@ Once you have your process nailed:
 - Write a test and watch it fail
 - Write just enough code to pass the test (without breaking any other test that was already passing!)
 
-You can continue working on solving this problem!
+Continue writing tests and refactoring until you have a `fizzbuzz` function that works for any number.
