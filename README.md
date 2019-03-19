@@ -172,3 +172,5 @@ Once you have your process nailed:
 - Write just enough code to pass the test (without breaking any other test that was already passing!)
 
 Continue writing tests and refactoring until you have a `fizzbuzz` function that works for any number.
+
+If you finish early try writing tests for (and handling) edge-cases (what happens when your function is called with a negative number?)
