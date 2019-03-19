@@ -15,7 +15,7 @@ One student starts by creating a single failing test and then the other writes c
 
 ## Defining the problem
 
-Before we start, and for the ones who are not familiar with the [FizzBuzz problem](https://en.wikipedia.org/wiki/Fizz_buzz), the idea is to write a function that takes a number and either:
+Before we start, and for the ones who are not familiar with the [FizzBuzz problem](https://en.wikipedia.org/wiki/Fizz_buzz), the idea is to write a function that takes a number and either returns the number _or_:
 
 - returns the number
 - for multiples of 3 returns the word **Fizz** instead of the number
