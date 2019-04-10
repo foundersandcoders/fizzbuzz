@@ -13,15 +13,15 @@ One student starts by creating a single failing test and then the other writes c
 
 ## Defining the problem
 
-Before we start, and for the ones who are not familiar with the FizzBuzz problem, the idea is to display numbers from 1 to 100, but
+Before we start, and for the ones who are not familiar with the [FizzBuzz problem](https://en.wikipedia.org/wiki/Fizz_buzz), the idea is to write a function that takes a number and either returns the number _or_:
 
-* for multiples of 3 we will display the word **Fizz** instead of the number,
-* for multiples of 5 we will output **Buzz** instead of the number and
-* for multiples of 3 and 5 we will display **FizzBuzz**.
+- for multiples of 3 we will display the word **Fizz** instead of the number,
+- for multiples of 5 we will output **Buzz** instead of the number and
+- for multiples of 3 and 5 we will display **FizzBuzz**.
 
 An example:
 
-```javascript
+```js
 fizzbuzz(1); // Output: 1
 fizzbuzz(2); // Output: 2
 fizzbuzz(3); // Output: Fizz
@@ -29,7 +29,7 @@ fizzbuzz(3); // Output: Fizz
 
 ## Defining the tool
 
-**Test-driven development (TDD)** is basically a methodology or a software development process that is based on the **repetition** of the following tasks:
+**Test-driven development (TDD)** is a methodology or a software development process that is based on the **repetition** of the following tasks:
 
 * write a simple test that defines an expected functionality/outcome
 * make the test fail (it will fail as we haven’t written any code just yet!)
@@ -54,7 +54,7 @@ This is also called the **Red-Green-Refactor** cycle of TDD.
 
   See example below for an example of a nested object.
 
-  ```
+  ```js
   var object = {
     baz: {
       foo: {
@@ -74,7 +74,7 @@ This is also called the **Red-Green-Refactor** cycle of TDD.
 
 Clone the repository by copy-pasting the following command into your terminal:
 
-```
+```js
 git clone https://github.com/foundersandcoders/fizzbuzz.git && cd fizzbuzz
 ```
 
@@ -90,7 +90,7 @@ Run the example test with:
 
 We will start by writing the most simple unit test of all, a unit test that will output the first number:
 
-```javascript
+```js
 test("Testing fizzbuzz return value", function(t) {
   var actual = fizzbuzz(1);
   var expected = 1;
@@ -105,7 +105,7 @@ Our first fail is because **fizzbuzz doesn't return anything**.
 
 So we need to add to the function in `index.js`:
 
-```javascript
+```js
 function fizzbuzz() {
   return 1;
 }
@@ -121,7 +121,7 @@ Let’s now get the first two numbers.
 
 Add a unit test to `test.js` to check if our function returns 2:
 
-```javascript
+```js
 test("Testing fizzbuzz return value", function(t) {
   var actual = fizzbuzz(2);
   var expected = 2;
@@ -136,7 +136,7 @@ We need to write just enough code to pass this test.
 
 Update `index.js`:
 
-```javascript
+```js
 function fizzbuzz(number) {
   if (number === 2) {
     return 2;
@@ -153,7 +153,7 @@ Well, that was easy, but we're not quite there yet. Let’s now get the first th
 
 Let's write a test:
 
-```javascript
+```js
 test("Testing fizzbuzz return value", function(t) {
   var actual = fizzbuzz(3);
   var expected = "Fizz";
@@ -166,7 +166,7 @@ The test fails because it expects **Fizz** but gets **1**.
 
 Let's write enough code to pass this test.
 
-```javascript
+```js
 function fizzbuzz(number) {
   if (number === 3) {
     return "Fizz";
@@ -185,7 +185,7 @@ so how can we make this easier to read?
 
 I’m thinking of removing one of the if/else statements, let’s try that:
 
-```javascript
+```js
 function fizzbuzz(number) {
   if (number === 3) {
     return "Fizz";
@@ -202,4 +202,6 @@ Once you have your process nailed:
 * Write a test and watch it fail
 * Write just enough code to pass the test (without breaking any other test that was already passing!)
 
-You can continue working on solving this problem!
+Continue writing tests and refactoring until you have a `fizzbuzz` function that works for any number.
+
+If you finish early try writing tests for (and handling) edge-cases (what happens when your function is called with a negative number?)
